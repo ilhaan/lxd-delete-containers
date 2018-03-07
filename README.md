@@ -11,7 +11,7 @@ The script `delete_all_lxd_containers.py` in this repo can delete **ALL** contai
 lxc delete --force <container_name> 
 ```
 
-The `--force` option above forces the remove of running containers. 
+The `--force` option above forces the removal of running containers. 
 
 This has been tested on Ubuntu 16.04. 
 
