@@ -19,7 +19,7 @@ Enabling the image delete option is the equivalent of running the following comm
 lxc image delete <image_fingerprint>
 ```
 
-This script has been tested on Ubuntu 16.04 with LXD version 2.21. 
+This script has been tested on Ubuntu 16.04 with `snap` installed LXD version 3.3. 
 
 ## Requirements 
 * Python3 
