@@ -44,7 +44,7 @@ def container_delete():
     """Function that deletes all containers"""
 
     # Run lxc list command to get JSON output as a string
-    lxc_output = subprocess.run(["lxc", "list", "-c", "n", "--format=json"],
+    lxc_output = subprocess.run(["/snap/bin/lxc", "list", "-c", "n", "--format=json"],
                                 stdout=subprocess.PIPE).stdout.decode('utf-8')
 
     # Load json string output
@@ -57,7 +57,7 @@ def container_delete():
 
     # Run LXD Delete command for each container
     for container in container_names:
-        subprocess.run(["lxc", "delete", "--force", container])
+        subprocess.run(["/snap/bin/lxc", "delete", "--force", container])
 
 
 def image_delete():
@@ -77,7 +77,7 @@ def image_delete():
 
     # Run LXD Image Delete command for each container
     for image in image_fingerprints:
-        subprocess.run(["lxc", "image", "delete", image])
+        subprocess.run(["/snap/bin/lxc", "image", "delete", image])
 
 
 if __name__ == '__main__':
