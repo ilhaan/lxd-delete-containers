@@ -64,7 +64,7 @@ def image_delete():
     """Function that deletes all images"""
 
     # Run lxc image list command to get JSON output as a string
-    lxc_output = subprocess.run(["lxc", "image", "list", "--format=json"],
+    lxc_output = subprocess.run(["/snap/bin/lxc", "image", "list", "--format=json"],
                                 stdout=subprocess.PIPE).stdout.decode('utf-8')
 
     # Load json string output
