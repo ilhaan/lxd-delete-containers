@@ -13,7 +13,6 @@ Author: Ilhaan Rasheed
 """
 
 import json
-from pprint import pprint
 import subprocess
 import argparse
 import sys
