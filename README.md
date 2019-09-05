@@ -31,3 +31,8 @@ This script has been tested on Ubuntu 16.04 & 18.04 with `snap` installed LXD ve
 3. View available options: `./delete_all_lxd_containers.py --help`
 4. Delete containers: `./delete_all_lxd_containers.py -c`
 5. Delete images: `./delete_all_lxd_containers.py -i`
+
+Alternatively, you can run this script without cloning the repo using [`curl`](https://curl.haxx.se/). For example, the following command runs the script and displays it's help message: 
+```
+curl -s https://raw.githubusercontent.com/ilhaan/lxd-delete-containers/master/delete_all_lxd_containers.py | python3 - -h 
+```
