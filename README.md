@@ -36,3 +36,8 @@ Alternatively, you can run this script without cloning the repo using [`curl`](h
 ```
 curl -s https://raw.githubusercontent.com/ilhaan/lxd-delete-containers/master/delete_all_lxd_containers.py | python3 - -h 
 ```
+
+## Alternatives
+The following commands will accomplish the same thing this script does, without needing Python or this script installed:
+delete all containers:  lxc delete $(lxc list -c n --format csv)
+delete all images:      lxc image delete $(lxc image list -c f --format csv)
