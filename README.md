@@ -39,5 +39,5 @@ curl -s https://raw.githubusercontent.com/ilhaan/lxd-delete-containers/master/de
 
 ## Alternatives
 The following commands will accomplish the same thing this script does, without needing Python or this script installed:
-delete all containers:  lxc delete $(lxc list -c n --format csv)
-delete all images:      lxc image delete $(lxc image list -c f --format csv)
+* delete all containers:  `lxc delete $(lxc list -c n --format csv)`
+* delete all images:      `lxc image delete $(lxc image list -c f --format csv)`
